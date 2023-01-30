@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    
+   
+  }
+html{
+  font-size: calc(100vw / 1550 * 10);
+ 
+  @include media('max','lg'){
+    font-size: calc(100vw / 768 * 10);
+  }
+  @include media('max','sm'){
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+img {
+    max-width: 100%;
+    display: block;
+  }
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul,ol{
+list-style: none;
+}
+
+textarea{
+    resize: none;
+}
+
+button,input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
